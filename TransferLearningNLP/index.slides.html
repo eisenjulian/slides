@@ -11906,7 +11906,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div>
-    <img width="100%" src="https://software.intel.com/sites/default/files/managed/95/b1/transfer-learning-in-natural-language-processing-marquee.png">
+    <img width="100%" src="media/cover.png">
     <center>
         <h1>Life After Word Embeddings:<br/>Language modeling for transfer learning in NLP</h1>
         <h3>Julian Eisenschlos @eisenjulian</h3>
@@ -11926,9 +11926,18 @@ a.anchor-link {
 <h1 id="Agenda">Agenda<a class="anchor-link" href="#Agenda">&#182;</a></h1><ul>
 <li>Transferencia de aprendizaje</li>
 <li>Modelado de lenguaje</li>
-<li>Transformers</li>
-<li>ULMFiT</li>
+<li>Fine-tuned Transformer Language Model</li>
+<li>Univeral Language Model Fine-Tuning (ULM-FiT)</li>
 </ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Slides">Slides<a class="anchor-link" href="#Slides">&#182;</a></h2><p><img src="media/qr.png" alt="qr"></p>
 
 </div>
 </div>
@@ -11968,7 +11977,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="https://prateekvjoshi.files.wordpress.com/2015/10/3-bulls-eye.png" alt="bias_variance" style="
+<p><img src="media/bias-variance.png" alt="bias_variance" style="
     height: 400px;
 "></p>
 
@@ -11992,7 +12001,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="https://www.learnopencv.com/wp-content/uploads/2018/05/AlexNet-1.png" alt="AlexNet"></p>
+<p><img src="media/AlexNet.png" alt="AlexNet"></p>
 
 </div>
 </div>
@@ -12328,7 +12337,7 @@ $$W(animal) = (0.7, -0.2, -0.1, ...)$$</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>¿Cómo usamos el modelos de lenguaje para mejorar la performance en tareas cómo clasificación?</p>
-<p><img src="https://cdn-images-1.medium.com/max/700/1*HgXA9v1EsqlrRDaC_iORhQ.png" alt="text_classification"></p>
+<p><img src="media/class.png" alt="text_classification"></p>
 
 </div>
 </div>
@@ -12346,7 +12355,7 @@ $$W(animal) = (0.7, -0.2, -0.1, ...)$$</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>El modelo <a href="https://arxiv.org/abs/1706.03762">Transformer</a> de <em>Vaswani et al</em> fue introducido en <strong>2017</strong>. Se basa principalemente en selt-attention basada en contenido y posición.</p>
-<p><img src="https://1.bp.blogspot.com/-AVGK0ApREtk/WaiAuzddKVI/AAAAAAAAB_A/WPV5ropBU-cxrcMpqJBFHg73K9NX4vywwCLcBGAs/s1600/image2.png" alt="attention"></p>
+<p><img src="media/attention.png" alt="attention"></p>
 
 </div>
 </div>
@@ -12367,7 +12376,7 @@ $$W(animal) = (0.7, -0.2, -0.1, ...)$$</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Originalmente usaron esta arquitectura para traducción, mejorando el <strong>SOTA</strong> para el WMT Benchmark de traducciones del inglés al alemán y al francés. Ver el código en <a href="https://github.com/tensorflow/tensor2tensor">github</a></p>
-<p><img src="https://4.bp.blogspot.com/-OlrV-PAtEkQ/W3RkOJCBkaI/AAAAAAAADOg/gNZXo_eK3tMNOmIfsuvPzrRfNb3qFQwJwCLcBGAs/s1600/image1.gif" alt="universal-transformer"></p>
+<p><img src="media/transformer.gif" alt="universal-transformer"></p>
 <p>Nota: esta imagen es de una siguiente iteración llamada <a href="https://arxiv.org/abs/1807.03819">Universal Transformer</a>.</p>
 
 </div>
@@ -12378,7 +12387,7 @@ $$W(animal) = (0.7, -0.2, -0.1, ...)$$</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>A mitad de 2018, <em>Alec Radford et al</em> usaron transformers pre-entrenados usando modelos de lenguaje para muchas otras tareas clásicas de NLP con resultados muy buenos en casi todas</p>
-<p><img src="https://cdn-images-1.medium.com/max/908/0*EuCMYUdGSrbFS4n2.png" alt="task-arq"></p>
+<p><img src="media/openai.png" alt="task-arq"></p>
 <p>Se puede ver el código y el modelo entrenado en <a href="https://github.com/openai/finetune-transformer-lm">https://github.com/openai/finetune-transformer-lm</a></p>
 
 </div>
@@ -12439,7 +12448,7 @@ $$W(animal) = (0.7, -0.2, -0.1, ...)$$</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Con $100$ ejemplos se logran resultados que antes necesitaban $20$ mil!</p>
-<p><img src="http://blog.feedly.com/wp-content/uploads/2018/07/Screen-Shot-2018-07-31-at-10.56.56-AM.png" alt="results"></p>
+<p><img src="media/ulmfit.png" alt="results"></p>
 
 </div>
 </div>
@@ -12448,7 +12457,7 @@ $$W(animal) = (0.7, -0.2, -0.1, ...)$$</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Resultados">Resultados<a class="anchor-link" href="#Resultados">&#182;</a></h3><p><img src="https://camo.qiitausercontent.com/f62f425ed6fa8320f6efd2ad19a54a6c26b281c2/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f31323030392f66343865663337362d343461332d326532372d326636302d3230613934643763316662322e706e67" alt="results"></p>
+<h3 id="Resultados">Resultados<a class="anchor-link" href="#Resultados">&#182;</a></h3><p><img src="media/ulmfit-results.png" alt="results"></p>
 
 </div>
 </div>
