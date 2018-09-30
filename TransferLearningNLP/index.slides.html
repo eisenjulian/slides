@@ -12495,20 +12495,22 @@ python fastai/courses/dl2/imdb_scripts/train_clas.py <span class="nv">$DATA_PATH
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Pasando-en-limpio">Pasando en limpio<a class="anchor-link" href="#Pasando-en-limpio">&#182;</a></h2><ul>
-<li>Los modelos de lenguaje pueden ser el <strong>ImageNet</strong> para NLP</li>
-<li>OpenAI transformer re-usa modelos de lenguaje entrenados conjuntamente con otras tareas<ul>
-<li>Se basa en una idea novedosa que intenta reemplazar a las RNNs por capaz de self-attention</li>
+<li>Los modelos de lenguaje, ¿pueden ser el <strong>ImageNet</strong> para NLP?</li>
+<li>OpenAI Transformer Language Model<ul>
+<li>Se basa en self-attention en lugar de RNNs</li>
+<li>Entrena conjuntamente el LM junto con la tarea específica</li>
 <li>Consigue mejores resultados en otras tareas más allá de clasificación</li>
 <li>Lento de entrenar (1 mes en 8 GPUs)</li>
 </ul>
 </li>
-<li>ULMFiT usa AWD-LSTMs para construir clasificadores basados en LMs.<ul>
-<li>Usa técnicas complejas de regularización</li>
-<li>Datos en todos los idiomas</li>
+<li>ULMFiT<ul>
+<li>Se basa modelos de lenguaje AWD-LSTMs</li>
+<li>Usa learning rates discriminativos</li>
+<li>Hay datos uniformes en casi todos los idiomas</li>
 <li>Más rápido de entrenar</li>
 </ul>
 </li>
-<li>Ambos modelos y código son públicos!</li>
+<li>¡Ambos modelos y código son públicos!</li>
 </ul>
 
 </div>
