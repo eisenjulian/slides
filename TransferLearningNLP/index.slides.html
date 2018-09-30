@@ -11937,8 +11937,10 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Slides">Slides<a class="anchor-link" href="#Slides">&#182;</a></h2><p><img src="media/qr.png" alt="qr"></p>
-
+<h2 id="Slides">Slides<a class="anchor-link" href="#Slides">&#182;</a></h2><center>
+    <h3><a href="http://bit.ly/transfer-nlp">bit.ly/transfer-nlp</a></h3>
+    <img style="height: 400px;" src="media/qr.png"/>
+</center>
 </div>
 </div>
 </div></section></section><section><section>
@@ -11977,9 +11979,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="media/bias-variance.png" alt="bias_variance" style="
-    height: 400px;
-"></p>
+<p><img src="media/bias-variance.png" alt="bias_variance" style="height: 400px;"></p>
 
 </div>
 </div>
@@ -12195,7 +12195,7 @@ $$W(animal) = (0.7, -0.2, -0.1, ...)$$</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Los ejemplos paramétricos más comunes se basan en una función (en general una red neuronal) $f: (w_{t-1}, \cdots, w_{t-n})\to \mathbb{R}^k$ que dado el contexto construye un vector $h$ y un embedding $v:V\to\mathbb{R}^k$  con una capa <em>softmax</em> cacula:</p>
+<p>Los ejemplos paramétricos más comunes se basan en un embedding $v:V\to\mathbb{R}^k$, y una función (en general una red neuronal) $f: (w_{t-1}, \cdots, w_{t-n})\to \mathbb{R}^k$ que dado el <strong>contexto</strong> construye un vector $h$ y con una capa <em>softmax</em> cacula:</p>
 <p>$$P(w|w_{t−1},\cdots,w_{t−n})\propto \exp(h\cdot v_w)$$</p>
 
 </div>
@@ -12205,7 +12205,7 @@ $$W(animal) = (0.7, -0.2, -0.1, ...)$$</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Una arquitectura común para modelos esto es el uso de redes recurrentes (o RNN), es decir una función recursiva $g$ tal que:</p>
+<p>Una arquitectura común para modelos esto es el uso de redes recurrentes (o <strong>RNN</strong>), es decir una función recursiva $g$ tal que:</p>
 <p>$$f(w_{t-1},\cdots,w_{t-n}) = g(w_{t-1}, g(w_{t-2}, \cdots))$$</p>
 <p><img src="http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-unrolled.png" alt="RNN"></p>
 <p>Referencia: <a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">Understanding LSTMs</a></p>
