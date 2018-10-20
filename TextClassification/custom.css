@@ -1,0 +1,15 @@
+.reveal table, .reveal table th, .reveal table td, .reveal table tr, .reveal table tbody {
+	border: none;
+}
+
+.reveal h2, .reveal h1 {
+	font-size: 200%;
+}
+
+.reveal p {
+	font-size: 25px;
+}
+
+.reveal ul {
+	font-size: 25px;
+}
